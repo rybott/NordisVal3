@@ -1,0 +1,22 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <!-- Additional stylesheet specific to this page -->
+   <link rel="stylesheet" href="{% static '' %}">
+{% endblock %}
+
+{% block main_template %}
+
+<h2>Enable Multi-Factor Authentication</h2>
+<p>Scan the QR code below with your Authenticator app.</p>
+<img src="{{ qr_code }}" alt="MFA QR Code">
+<p>After scanning, enter the verification code:</p>
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="mfa_code" placeholder="Enter 6-digit code" required>
+    <button type="submit">Verify & Enable</button>
+</form>
+
+
+{% endblock %}

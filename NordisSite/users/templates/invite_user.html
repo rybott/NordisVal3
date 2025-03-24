@@ -1,0 +1,19 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <!-- Additional stylesheet specific to this page -->
+   <link rel="stylesheet" href="{% static '' %}">
+{% endblock %}
+
+{% block main_template %}
+
+<form method="post">
+    {% csrf_token %}
+    <input type="email" name="email" placeholder="Enter user email" required>
+    <button type="submit">Invite User</button>
+</form>
+
+
+
+{% endblock %}

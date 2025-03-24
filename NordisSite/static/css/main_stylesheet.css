@@ -1,0 +1,124 @@
+:root {
+    --drkbase: #131a15; /* var(--drkbase); */
+    --lgtbase: #2C3930;
+    --lgttext: #dbd4bf;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+.logo {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bolder;}
+
+.logo_child img{
+    height: 60px;
+    padding-right: 1%;}
+
+#account {
+    font-size: 0.95rem;
+    background-color: #b8922a;
+    padding: .2em .6em;
+    border-radius: 3px;
+    font-weight: 400;}
+#account1 {
+    font-size: 0.95rem;
+    background-color: #b8922a;
+    padding: .2em .6em;
+    border-radius: 3px;
+    font-weight: 400;}
+
+
+
+.chat-button {
+    position: fixed;
+    bottom: 0px;
+    right: 18px;
+    background: #b8922a;
+    color: #dbd4bf;
+    padding: .5em 1em;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.hero-section {
+    color: #dbd4bf;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background: #131a15;
+    opacity: 85%;
+}
+
+.text-container {
+    position: absolute;
+    top: 40%;
+    left: 10%; /* Margin effect */
+    transform: translateY(-50%);
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    max-width: 23%; /* Preserve text width */
+}
+
+.text-container h1{
+    font-size: 2.05rem;
+    font-weight: 600;
+    padding: 4% 0;
+}
+
+.text-container h1 b{
+    font-weight: 700;
+    font-size: 2.75rem;
+}
+
+.text-container p{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.Contact_btn {
+    text-align: center;
+    justify-content: center;
+    margin: 8% auto;
+    padding: 3% 8%;
+    background-color: #2C3930;
+    border-radius: 30px;
+    width: fit-content;
+    display: flex;
+}
+
+.Contact_btn a {
+    text-decoration: none; /* Removes underline */
+    color: #dbd4bf;
+}
+
+.Contact_btn:hover{
+    background-color: #222b25;
+}

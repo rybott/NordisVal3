@@ -1,0 +1,322 @@
+[
+    [
+        "parer Use",
+        "Firm's name",
+        "RAICH ENDE MALTER AND CO LLP",
+        "Firm's EIN",
+        "11-2336434",
+        "1b from line 1a",
+        "1c",
+        "24,226,880."
+    ],
+    [
+        "Only",
+        "Firm's address",
+        "175 BROADHOLLOW ROAD SUITE 250 MELVILLE, NY 11747",
+        "Phone no.",
+        "516-228-9000",
+        "",
+        "2",
+        "18,680,463."
+    ],
+    [
+        "",
+        "3",
+        "Gross profit. Subtract line 2 from line 1c",
+        "",
+        "",
+        "",
+        "3",
+        "5,546,417."
+    ],
+    [
+        "",
+        "4",
+        "Net gain (loss) from Form 4797, line 17 (attach Form 4797)",
+        "",
+        "",
+        "",
+        "4",
+        "88,310."
+    ],
+    [
+        "",
+        "5",
+        "Other income (loss) (attach statement) STATEMENT 1",
+        "",
+        "STATEMENT",
+        "2",
+        "5",
+        "1,917."
+    ],
+    [
+        "",
+        "6",
+        "Total income (loss). Add lines 3 through 5",
+        "",
+        "",
+        "",
+        "6",
+        "5,636,644."
+    ],
+    [
+        "",
+        "7",
+        "Compensation of officers (see instrs. - attach Form 1125-E)",
+        "",
+        "",
+        "",
+        "7",
+        "766,652."
+    ],
+    [
+        "",
+        "8",
+        "Salaries and wages (less employment credits)",
+        "",
+        "",
+        "",
+        "8",
+        "2,535,057."
+    ],
+    [
+        "",
+        "9",
+        "Repairs and maintenance",
+        "",
+        "",
+        "",
+        "9",
+        "27,546."
+    ],
+    [
+        "",
+        "10",
+        "Bad debts",
+        "",
+        "",
+        "",
+        "10",
+        "9,422."
+    ],
+    [
+        "",
+        "11",
+        "Rents",
+        "",
+        "",
+        "",
+        "11",
+        "108,832."
+    ],
+    [
+        "",
+        "12",
+        "Taxes and licenses",
+        "",
+        "STATEMENT",
+        "3",
+        "12",
+        "298,476."
+    ],
+    [
+        "",
+        "13",
+        "Interest",
+        "",
+        "",
+        "",
+        "13",
+        "202,506."
+    ],
+    [
+        "",
+        "14",
+        "Depreciation not claimed on Form 1125-A or elsewhere on return (attach Form 4562)",
+        "",
+        "",
+        "",
+        "14",
+        "30,220."
+    ],
+    [
+        "",
+        "15",
+        "Depletion (Do not deduct oil and gas depletion.)",
+        "",
+        "",
+        "",
+        "15",
+        ""
+    ],
+    [
+        "",
+        "16",
+        "Advertising",
+        "",
+        "",
+        "",
+        "16",
+        "4,100."
+    ],
+    [
+        "",
+        "17",
+        "Pension, profit-sharing, etc., plans",
+        "",
+        "",
+        "",
+        "17",
+        ""
+    ],
+    [
+        "",
+        "18",
+        "Employee benefit programs",
+        "",
+        "",
+        "",
+        "18",
+        "75,022."
+    ],
+    [
+        "",
+        "19",
+        "Other deductions (attach statement)",
+        "",
+        "STATEMENT",
+        "4",
+        "19",
+        "818,061."
+    ],
+    [
+        "",
+        "20",
+        "Total deductions. Add lines 7 through 19",
+        "",
+        "",
+        "",
+        "20",
+        "4,875,894."
+    ],
+    [
+        "",
+        "21",
+        "Ordinary business income (loss). Subtract line 20 from line 6",
+        "",
+        "",
+        "",
+        "21",
+        "760,750."
+    ],
+    [
+        "",
+        "22 a",
+        "Excess net passive income or LIFO recapture tax (see nstructions)",
+        "22a",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [
+        "",
+        "b",
+        "Tax from Schedule D (Form 1120S)",
+        "22b",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [
+        "",
+        "C",
+        "Add lines 22a and 22b",
+        "",
+        "",
+        "",
+        "22c",
+        ""
+    ],
+    [
+        "",
+        "23 a",
+        "2016 estimated tax payments and 2015 overpayment credited to 2016",
+        "23a",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [
+        "",
+        "b",
+        "Tax deposited with Form 7004",
+        "23b",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [
+        "",
+        "C",
+        "Credit for federal tax paid on fuels (attach Form 4136)",
+        "23c",
+        "",
+        "",
+        "",
+        ""
+    ],
+    [
+        "",
+        "d",
+        "Add lines 23a through 23c",
+        "",
+        "",
+        "",
+        "23d",
+        ""
+    ],
+    [
+        "",
+        "24",
+        "Estimated tax penalty (see instructions). Check if Form 2220 is attached",
+        "",
+        "",
+        "",
+        "24",
+        ""
+    ],
+    [
+        "",
+        "25",
+        "Amount owed. If line 23d is smaller than the total of lines 22c and 24, enter amount",
+        "owed",
+        "",
+        "",
+        "25",
+        ""
+    ],
+    [
+        "",
+        "26",
+        "Overpayment. If line 23d is larger than the total of lines 22c and 24, enter amount",
+        "overpaid",
+        "",
+        "",
+        "26",
+        ""
+    ],
+    [
+        "",
+        "27",
+        "Enter amount from line 26 Credited to 2017 estimated tax",
+        "",
+        "",
+        "Refunded",
+        "27",
+        ""
+    ]
+]

@@ -1,0 +1,14 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <!-- Additional stylesheet specific to this page -->
+   <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock %}
+
+{% block main_template %}
+
+<a href="{% url 'webinterface:hom' %}">Blog</a>
+
+
+{% endblock %}

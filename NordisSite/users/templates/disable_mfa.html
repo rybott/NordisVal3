@@ -1,0 +1,20 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <!-- Additional stylesheet specific to this page -->
+   <link rel="stylesheet" href="{% static '' %}">
+{% endblock %}
+
+{% block main_template %}
+
+<h2>Disable Multi-Factor Authentication</h2>
+<p>To disable MFA, confirm your password.</p>
+<form method="post">
+    {% csrf_token %}
+    <input type="password" name="password" placeholder="Enter Password" required>
+    <button type="submit">Disable MFA</button>
+</form>
+
+
+{% endblock %}

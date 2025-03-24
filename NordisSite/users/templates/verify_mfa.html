@@ -1,0 +1,20 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <!-- Additional stylesheet specific to this page -->
+   <link rel="stylesheet" href="{% static '' %}">
+{% endblock %}
+
+{% block main_template %}
+
+<h2>Multi-Factor Authentication</h2>
+<p>Enter the 6-digit code from your Authenticator app.</p>
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="mfa_code" placeholder="Enter Code" required>
+    <button type="submit">Verify</button>
+</form>
+
+
+{% endblock %}

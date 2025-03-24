@@ -1,0 +1,82 @@
+{
+    "IS": {
+        "Values": ["SCHEDULE B"],
+        "Reference": null,
+        "PgSearchAdj": null,
+        "Validation": ["GROSS PROFITS"],
+        "SinglePageValidation": null,
+        "ProgrammerNotes": "Look for Statements"
+    },
+    "SchK": {
+        "Values": ["SCHEDULE K"],
+        "Reference": "IS",
+        "PgSearchAdj": 2,
+        "Validation": ["PRO RATA SHARE"],
+        "SinglePageValidation": null,
+        "ProgrammerNotes": "Look for Statements, Should be 2 Pages away from IS"
+    },
+    "BS": {
+        "Values": ["SCHEDULE L"],
+        "Reference": null,
+        "PgSearchAdj": null,
+        "Validation": ["CASH"],
+        "SinglePageValidation": ["TOTAL LIABILITIES AND"],
+        "ProgrammerNotes": "Look for Statements, Check to See if is only on One page"
+    },
+    "M1": {
+        "Values": ["SCHEDULE M-1"],
+        "Reference": "BS",
+        "PgSearchAdj": 0,
+        "Validation": ["PER BOOKS"],
+        "SinglePageValidation": null,
+        "ProgrammerNotes": "Look for Statements, First to Check to see if M1 is on Same Page as BS"
+    },
+    "M2": {
+        "Values": ["SCHEDULE M-2"],
+        "Reference": null,
+        "PgSearchAdj": null,
+        "Validation": ["ANALYSIS OF ACCUMULATED"],
+        "SinglePageValidation": null,
+        "ProgrammerNotes": "Look for Statements, First to Check to see if M2 is on Same Page as BS"
+    },
+    "1125A": {
+        "Values": ["1125-A"],
+        "Reference": null,
+        "PgSearchAdj": null,
+        "Validation": ["INVENTORY AT BEGINNING"],
+        "SinglePageValidation": null,
+        "ProgrammerNotes": "Look for Statements"
+    },
+    "1125E": {
+        "Values": ["1125-A"],
+        "Reference": null,
+        "PgSearchAdj": null,
+        "Validation": null,
+        "SinglePageValidation": null,
+        "ProgrammerNotes": "No Notes, Only Look for This Until You reach Statements"
+    },
+    "SchC": {
+        "Values": ["SCHEDULE C"],
+        "Reference": null,
+        "PgSearchAdj": null,
+        "Validation": null,
+        "SinglePageValidation": null,
+        "ProgrammerNotes": "No Notes"
+    },
+    "SchE": {
+        "Values": ["SCHEDULE E"],
+        "Reference": null,
+        "PgSearchAdj": null,
+        "Validation": null,
+        "SinglePageValidation": null,
+        "ProgrammerNotes": "No Notes"
+    },
+    "Statements": {
+        "Values": ["STATEMENT", "STMNT", "STMT", "STM"],
+        "Reference": null,
+        "PgSearchAdj": null,
+        "Validation": null,
+        "SinglePageValidation": null,
+        "ProgrammerNotes": "No Notes, Add an error saying 'Hey we found statements but not inline statements. Can you please...."
+    }
+}
