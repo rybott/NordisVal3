@@ -117,11 +117,6 @@ class Storage():
         self.Analyzer = Analyzer(self.instructions, self.Pgs_array)
         self.Analyzer.find_forms()
 
-    def update_analyzed(self, form, analyzed:bool=False, validated:bool=False):
-        if analyzed == True:
-            self.AnalyzedForms_df.loc[self.AnalyzedForms_df['Form'] == form, 'Analyzed'] = 1
-        if validated == True:
-            self.AnalyzedForms_df.loc[self.AnalyzedForms_df['Form'] == form, 'Validated'] = 1
 
     def close_connection(self):
         self.conn.close()
