@@ -4,7 +4,7 @@ import boto3
 import os
 
 # Setup Paths
-pdf_path = r"C:\Design Folder\RBGithub\NexusVS\Testing Automatic Processes\Data\PDFs\2017 S Corp\111 S Corp Tax Return IS no Statements.pdf"
+pdf_path = r"/workspaces/NordisVal3/Automating/Data/PDFs/2017 S Corp/111 Full S Corp Tax Return.pdf"
 poppler_bin_path = r"C:\Program Files\poppler-24.08.0\Library\bin"
 
 # Add Poppler to Path if Not Already
