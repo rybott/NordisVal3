@@ -65,9 +65,9 @@ class Analyzer():
 
 
     '''Issues that might arise
-    - The Check_values function uses the global current page, so when 
-    
-    
+    - The Check_values function uses the global current page, so when
+
+
     '''
 
 
@@ -82,26 +82,26 @@ class Analyzer():
                 self.CurrentPG: int = row[0]
 
                 match form:
-                    
+
                     case None:
                         # Program is Finished. Break out of Page Loop and Porcess Data
                         pass
-                    
+
                     case "Statements":
-                        # This will first loop until it find the statements, and then 
+                        # This will first loop until it find the statements, and then
                         Values: list = self.instructions[form]['Values']
                         if found_stmt == False:
                             text = self.OCR.TessOcr2(row[1]).upper()
-                            self.Pgs_array[3, i] = text # Save the text
                             if self.check_values(text, form, Values) == 1:
+                                self.Pgs_array[3, i] = text # Save the text
                                 indec = list(self.Form_array[0]).index(form)
                                 self.Form_array[2,indec] = 1
                             else:
-                                pass
-                            
-                        else: 
+                                
+
+                        else:
                             pass
-                    
+
                     case _:
                         # Get the Instructions for Form
                         Values: list = self.instructions[form]['Values']
@@ -127,12 +127,10 @@ class Analyzer():
                                 text = self.OCR.TessOcr2(row[1]).upper()
                                 self.check_values(text, form, Values, Validation)
                             self.Pgs_array[3, i] = text # Save the text
-                            
+
                         if SingePgValidation is None:
                             continue # Finished Loop for One Page
                         else:
                             Sndpg = self.CurrentPG +  1 # Look at the next page to see if it is continued form first
                             text = self.OCR.TessOcr2(self.Pgs_array[2, Sndpg]).upper()
                             self.check_values(text, form, SingePgValidation, Pg=Sndpg)
-                            
-                            
