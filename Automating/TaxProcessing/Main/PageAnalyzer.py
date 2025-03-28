@@ -22,7 +22,7 @@ class Analyzer():
         self.Pg_array = Pg_array # (Pg No, Img, Is Analyzed, pytext) Starting at 0
 
         self.instructions = instructions_json
-        # (Form, Pg No, Found, Validated)
+        # (Form, Pg No, Found, Validated) # for Statements the last column will be for last page index
         data = [(key, 0, 0, 0) for key in self.instructions.keys()]
         self.Form_array = np.array(data, dtype=object)
 
@@ -59,9 +59,16 @@ class Analyzer():
                             for word in Validation:
                                 if word.upper() in text:
                                     self.Form_array[3,i] = 1 #Set as Validated
-                                    self.Form_array[1,i] = self.CurrentPG if Pg is None else Pg # Save Pg
-                                    Found = 1
+                                    if form != "Statements":
+                                        self.Form_array[1,i] = self.CurrentPG if Pg is None else Pg # Save Pg
+                                        Found = 1
+                                    else:
+                                        self.Form_array[3,i] = self.CurrentPG if Pg is None else Pg # Save Pg
+                                        self.Pgs_array[3, i] = text # save text
+                                        # I am editing this at 5:03 3/27/25
         return Found
+
+
 
 
     '''Issues that might arise
@@ -92,15 +99,22 @@ class Analyzer():
                         Values: list = self.instructions[form]['Values']
                         if found_stmt == False:
                             text = self.OCR.TessOcr2(row[1]).upper()
+
                             if self.check_values(text, form, Values) == 1:
                                 self.Pgs_array[3, i] = text # Save the text
-                                indec = list(self.Form_array[0]).index(form)
-                                self.Form_array[2,indec] = 1
+                                found_stmt = True
                             else:
-                                
+                                pass
 
-                        else:
-                            pass
+                        else: # It found the statements section and will loop through the statements
+                            loop = 1
+                            pg = i
+                            while loop = 1:
+                                text = self.OCR.TessOcr2(row[1]).upper()
+                                if self.check_values(text, form, Values, pg) == 1:
+                                    self.Pgs_array[3, i] = text # Save the text
+
+
 
                     case _:
                         # Get the Instructions for Form
