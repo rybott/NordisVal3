@@ -92,6 +92,7 @@ class Analyzer():
 
                     case None:
                         # Program is Finished. Break out of Page Loop and Porcess Data
+                        # To start I want to just print the data and see if it works
                         pass
 
                     case "Statements":
