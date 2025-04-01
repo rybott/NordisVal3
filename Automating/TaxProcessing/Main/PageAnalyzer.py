@@ -95,6 +95,7 @@ class Analyzer():
                         # To start I want to just print the data and see if it works
                         pass
 
+
                     case "Statements":
                         # This will first loop until it find the statements, and then
                         Values: list = self.instructions[form]['Values']
@@ -108,12 +109,17 @@ class Analyzer():
                                 pass
 
                         else: # It found the statements section and will loop through the statements
-                            loop = 1
-                            pg = i
+                            loop = 1 # One means to loop until you don't find anything, when you don't find any statements => loop = 0
+                            pg = i # This allows the program to loop through all the pages within the loop and then break out of the loop
                             while loop = 1:
                                 text = self.OCR.TessOcr2(row[1]).upper()
                                 if self.check_values(text, form, Values, pg) == 1:
-                                    self.Pgs_array[3, i] = text # Save the text
+                                    self.Pgs_array[3, pg] = text # Save the text
+                                    pg += 1
+                                else:
+                                    loop = 0
+                                    self.CurrentForm = None
+
 
 
 
